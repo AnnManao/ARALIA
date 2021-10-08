@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+
+</head>
+<body>
+    <div class="w-full h-full overflow-hidden">
+        <nav class="absolute z-30 bg-[#07193A] w-full h-auto flex flex-row items-center justify-between border-b-2 border-white lg:px-20">
+            <div class="flex justify-start items-center">
+                <img src="img/logo.png" class="lg:h-16 md:h-12 h-16 w-auto" alt="Company Logo">
+                <div class="flex justify-center items-center h-auto pl-5">
+                    <a href="#" class="md:text-base text-xs text-white hover:text-[#22488D] focus:outline-none border-l-2 pl-5">Real Estate tagline</a>
+                </div>
+            </div>
+            <div class="flex flex-row flex-wrap items-center justify-center md:space-x-20 lg:visible invisible pro:hidden">
+                <a href="#" class="uppercase font-montserrat text-md md:text-[#FFF02C] text-white hover:text-[#22488D] focus:outline-none">home</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">about us</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">properties</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">latest updates</a>
+            </div>
+            <div class="md:space-x-20 lg:hidden block pro:block pro:pr-10">
+                <button type="button" class="text-white text-xl focus:text-text-[#22488D] active:hover:text text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+        <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2">
+            <div class="bg-[#07193A] w-auto flex flex-col items-center justify-start rounded-xl border shadow-xl p-6">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="img/logo.png" class="h-16 w-auto" alt="Company Logo">
+                    <button type="button" class="text-white text-xl focus:text-[#22488D] active:hover:text-[#22488D] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">home</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">about us</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">properties</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">latest updates</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-cover h-screen w-screen" style="background-image: url(img/background.jpg);">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+
+</head>
+<body>
+    <div class="w-full h-full overflow-hidden">
+        <nav class="absolute z-30 bg-[#07193A] w-full h-auto flex flex-row items-center justify-between border-b-2 border-white lg:px-20">
+            <div class="flex justify-start items-center">
+                <img src="img/logo.png" class="lg:h-16 md:h-12 h-16 w-auto" alt="Company Logo">
+                <div class="flex justify-center items-center h-auto pl-5">
+                    <a href="#" class="md:text-base text-xs text-white hover:text-[#22488D] focus:outline-none border-l-2 pl-5">Real Estate tagline</a>
+                </div>
+            </div>
+            <div class="flex flex-row flex-wrap items-center justify-center md:space-x-20 lg:visible invisible pro:hidden">
+                <a href="#" class="uppercase font-montserrat text-md md:text-[#FFF02C] text-white hover:text-[#22488D] focus:outline-none">home</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">about us</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">properties</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">latest updates</a>
+            </div>
+            <div class="md:space-x-20 lg:hidden block pro:block pro:pr-10">
+                <button type="button" class="text-white text-xl focus:text-text-[#22488D] active:hover:text text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+        <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2">
+            <div class="bg-[#07193A] w-auto flex flex-col items-center justify-start rounded-xl border shadow-xl p-6">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="img/logo.png" class="h-16 w-auto" alt="Company Logo">
+                    <button type="button" class="text-white text-xl focus:text-[#22488D] active:hover:text-[#22488D] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">home</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">about us</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">properties</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">latest updates</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-white h-screen w-screen">
+            <div class="grid grid-cols-4 gap-10 p-10 items-center">
+                <div class="items-center justify-center col-span-2 rounded-full">
+                    <img src="img/alabang.jpg" alt="Alabang buildings">
+                </div>
+
+                <div class="grid col-span-2 items-center">
+                    <p class="font-sans">YOUR POSH NEIGHBORHOOD IN THE SOUTH</p>
+                    <p class="font-sans text-4xl">Alabang West</p>
+                    <div class="flex flex-row items-center justify-center mt-4 gap-2">
+                        <div class="flex flex-row items-center justify-center w-auto h-auto gap-2 p-2 text-white bg-cover bg-gray-300">
+                            <img src="img/size.png" class="w-12 h-10">
+                            <p class="text-xs text-center">550 SqFt</p> 
+                        </div>
+                        <div class="flex flex-row items-center justify-center w-auto h-auto gap-2 p-2 text-white bg-cover bg-gray-300">
+                            <img src="img/bath.png" class="w-12 h-10">
+                            <p class="text-xs lg:w-32 text-center">4 bath</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-center w-auto h-auto gap-2 p-2 text-white bg-cover bg-gray-300">
+                            <img src="img/bed.png" class="w-12 h-10">
+                            <p class="text-xs lg:w-32 text-center">3 Bed</p>
+                        </div>
+                        <div class="flex flex-row items-center justify-center w-auto h-auto gap-2 p-2 text-white bg-cover bg-gray-300">
+                            <img src="img/car.png" class="w-12 h-10">
+                            <p class="text-xs lg:w-40 text-center">3 Garage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-4">
+                    <p class="font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore    
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>    
+
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>

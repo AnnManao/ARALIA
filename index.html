@@ -7,15 +7,11 @@
     <title>RealEstate</title>
     <link rel="stylesheet" href="build/tailwind.css">
     <link rel="stylesheet" href="/build/breakpoint.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="relative w-screen h-screen md:w-full md:h-screen md:bg-cover bg-cover bg-no-repeat" style="background-image: url('img/background.jpg');">
-        <nav class="absolute z-30 bg-[#07193A] h-20 md:h-16 w-full flex flex-row items-center justify-between border-b-2 md:pl-10 md:pr-10 pl-6 pr-6">
+    <div class="w-full h-full overflow-hidden">
+        <nav class="absolute z-30 bg-[#07193A] w-full h-auto flex flex-row items-center justify-between border-b-2 border-white lg:px-20">
             <div class="flex justify-start items-center">
                 <img src="img/logo.png" class="lg:h-16 md:h-12 h-16 w-auto" alt="Company Logo">
                 <div class="flex justify-center items-center h-auto pl-5">
@@ -52,18 +48,21 @@
             </div>
         </nav>
 
-        <div class="flex flex-col items-center justify-center">
-            <p class="md:mt-64 mt-64 font-sans text-center font-bold text-[#07193A] bg-transparent md:text-5xl text-l">"Looking for a new property investment?</p>
-            <p class="font-sans font-bold text-center text-[#07193A] bg-transparent md:text-5xl text-l">Take a virtual tour of our properties now!"</p>
+        <div class="bg-cover h-screen w-screen" style="background-image: url(img/background.jpg);">
+            <div class="flex flex-col items-center justify-center">
+                <p class="md:mt-64 mt-64 font-sans text-center font-bold text-[#07193A] bg-transparent md:text-5xl text-l">"Looking for a new property investment?</p>
+                <p class="font-sans font-bold text-center text-[#07193A] bg-transparent md:text-5xl text-l">Take a virtual tour of our properties now!"</p>
 
-            <div class="mt-16 md:w-1/2">
-                <div class="relative">
-                         
-                    <i class="absolute fa fa-search md:top-5 top-3 left-4"></i>
-                    <input type="text" class="bg-white md:h-14 h-10 w-full px-12 rounded-full text-center focus:outline-none hover:cursor-pointer" placeholder="Search">
+                <div class="mt-16 md:w-1/2">
+                    <div class="relative">
+                            
+                        <i class="absolute fa fa-search md:top-5 top-3 left-4"></i>
+                        <input type="text" class="bg-white md:h-14 h-10 w-full px-12 rounded-full text-center focus:outline-none hover:cursor-pointer" placeholder="Search">
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
 
     <script>

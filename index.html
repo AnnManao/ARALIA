@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="/build/breakpoint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="relative w-screen h-screen md:w-full md:h-screen md:bg-cover bg-cover bg-no-repeat" style="background-image: url('img/background.jpg');">
+        <nav class="absolute z-30 bg-[#07193A] h-20 md:h-16 w-full flex flex-row items-center justify-between border-b-2 md:pl-10 md:pr-10 pl-6 pr-6">
+            <div class="flex justify-start items-center">
+                <img src="img/logo.png" class="lg:h-16 md:h-12 h-16 w-auto" alt="Company Logo">
+                <div class="flex justify-center items-center h-auto pl-5">
+                    <a href="#" class="md:text-base text-xs text-white hover:text-[#22488D] focus:outline-none border-l-2 pl-5">Real Estate tagline</a>
+                </div>
+            </div>
+            <div class="flex flex-row flex-wrap items-center justify-center md:space-x-20 lg:visible invisible pro:hidden">
+                <a href="#" class="uppercase font-montserrat text-md md:text-[#FFF02C] text-white hover:text-[#22488D] focus:outline-none">home</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">about us</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">properties</a>
+                <a href="#" class="uppercase text-md text-white hover:text-[#22488D] focus:outline-none">latest updates</a>
+            </div>
+            <div class="md:space-x-20 lg:hidden block pro:block pro:pr-10">
+                <button type="button" class="text-white text-xl focus:text-text-[#22488D] active:hover:text text-white focus:outline-none" onclick="toggleElem('sm_navi')">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+        <nav id="sm_navi" class="hidden absolute z-50 inset-0 p-2">
+            <div class="bg-[#07193A] w-auto flex flex-col items-center justify-start rounded-xl border shadow-xl p-6">
+                <div class="flex flex-row items-center justify-between w-full">
+                    <img src="img/logo.png" class="h-16 w-auto" alt="Company Logo">
+                    <button type="button" class="text-white text-xl focus:text-[#22488D] active:hover:text-[#22488D] focus:outline-none" onclick="toggleElem('sm_navi')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center w-full p-2 space-y-2 border-t-2 border-b-2 border-gray-300 border-solid">
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">home</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">about us</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">properties</a>
+                    <a href="#" class="uppercase text-sm text-white focus:text-[#22488D] active:text-[#22488D] focus:outline-none">latest updates</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center">
+            <p class="md:mt-64 mt-64 font-sans text-center font-bold text-[#07193A] bg-transparent md:text-5xl text-l">"Looking for a new property investment?</p>
+            <p class="font-sans font-bold text-center text-[#07193A] bg-transparent md:text-5xl text-l">Take a virtual tour of our properties now!"</p>
+
+            <div class="mt-16 md:w-1/2">
+                <div class="relative">
+                         
+                    <i class="absolute fa fa-search md:top-5 top-3 left-4"></i>
+                    <input type="text" class="bg-white md:h-14 h-10 w-full px-12 rounded-full text-center focus:outline-none hover:cursor-pointer" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleElem(paramID)
+            {
+                document.getElementById(paramID).classList.toggle('hidden');
+                document.getElementById(paramID).classList.toggle('block');
+            }
+    </script>
+</body>
+</html>
